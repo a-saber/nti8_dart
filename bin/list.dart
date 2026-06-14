@@ -1,5 +1,6 @@
 void main(){
   List<int> myList = [1, 2, 3];
+  myList[2] =5;
   myList.add(4); 
   myList.addAll([5, 6, 7]);
   myList.insert(3, 100);
