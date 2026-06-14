@@ -1,13 +1,20 @@
 void main(){
-Map<String, dynamic> productAsMap = buildMap("Product A", 100, "Apple", -10);
+Map<String, dynamic> productAsMap = buildMap(
+  price: 100,
+  brand: "Apple",
+  quantity: 10,
+  name: "Product A",
+);
 print(productAsMap);
 }
 
 Map<String, dynamic> buildMap(
-  String name,
-  double price,
-  String brand,
-  int quantity
+ {
+  required String name,
+  required double price,
+  required String brand,
+  required int quantity
+  }
 )
 {
   return {
