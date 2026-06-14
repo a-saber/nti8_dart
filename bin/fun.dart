@@ -1,5 +1,5 @@
 void main(){
-  int result = calculate(10, 20);
+  int result = calculate( y: 20, x: 10);
   print(result);
 }
 
@@ -9,7 +9,7 @@ void main(){
 // Body
 //{}
 
-int calculate(int x, int y)
+int calculate({ required int x, required int y})
 {
   int sum = x + y;
   return sum;
