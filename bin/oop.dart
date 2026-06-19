@@ -23,3 +23,25 @@ void main(){
   b1.display();
   b2.display();
 }
+
+/*
+Product
+- name
+- price
+- brand
+- quantity
+
+// constructors
+Product({ required this.name, required this.price, required this.brand, required this.quantity });
+Product.categoryA(){
+  name = "Product A";
+  price = 100;
+  brand = "Apple";
+  quantity = 10;
+}
+displayInfo()
+
+sell(int soldQty)
+
+
+ */
