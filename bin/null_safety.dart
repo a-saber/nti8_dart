@@ -1,6 +1,6 @@
 /*
-fun sum :
-int? a, int? b
+fun sum (int? a, int? b):
+
 
 result = a + b;
 return result;

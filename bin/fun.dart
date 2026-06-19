@@ -1,7 +1,24 @@
 void main(){
-  int result = calculate( y: 20, x: 10);
-  print(result);
+  // int result = calculate( y: 20, x: 10);
+  // print(result);
+
+  sum(z: 20, 10, y: 20, k: 30);
+  Text('hello', color: 'red', fontSize: 20.0);
+
 }
+
+int sum(int x1, {required int y, int? z, int k = 5}){
+
+
+  return 10;
+}
+
+Text(String text, {
+  String? color, double? fontSize
+}){
+
+}
+
 
 // Build
 // header
