@@ -1,3 +1,12 @@
+/*
+fun sum :
+int? a, int? b
+
+result = a + b;
+return result;
+
+ */
+
 late int x;
 int? y ;
 String? s ;
