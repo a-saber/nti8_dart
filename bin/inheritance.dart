@@ -53,10 +53,12 @@ Car
 - color
 - doorsNumber
 - displayInfo()
+- startEngine() => "Engine started"
 Car() : Named Parameters
 
 ElectricCar
 - batteryCapacity
 - displayInfo()
+- startEngine() => "Engine started Silently"
 ElectricCar() : Named Parameters
  */
