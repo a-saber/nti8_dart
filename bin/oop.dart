@@ -45,3 +45,25 @@ sell(int soldQty)
 
 
  */
+
+/*
+
+BankAccount
+- balance
+- accountNumber
+- accountHolderName
+
+// constructors
+BankAccount({ required this.balance, required this.accountNumber, required this.accountHolderName });
+BankAccount.vip(){
+  balance = 1000;
+  accountNumber = "1234567890";
+  accountHolderName = "John Doe";
+}
+
+deposit(int amount)
+withdraw(int amount)
+
+display()
+
+ */
