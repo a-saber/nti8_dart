@@ -14,9 +14,10 @@ Dio dio = Dio(BaseOptions(baseUrl: baseUrl));
 String? accessToken;
 
 void main() async {
-  await login();
-  await newTask();
-  getTasks();
+  // await login();
+  // await newTask();
+  // getTasks();
+  register();
 }
 
 Future newTask() async {
@@ -52,6 +53,19 @@ Future login() async {
     var result = await dio.post('login',
         data: FormData.fromMap(
             {'username': 'ahmed-saber', 'password': '1234567'}));
+    var mapResponse = result.data as Map<String, dynamic>;
+    accessToken = mapResponse['access_token'];
+  } catch (e) {
+    handleError(e);
+  }
+}
+Future register() async {
+  try {
+    var result = await dio.post('register',
+        data: FormData.fromMap(
+            {'username': 'ahmed-saber-01', 'password': '1234567',
+            'image': await MultipartFile.fromFile("C:\\Users\\Saber\\Downloads\\1010.png")
+            }));
     var mapResponse = result.data as Map<String, dynamic>;
     accessToken = mapResponse['access_token'];
   } catch (e) {
