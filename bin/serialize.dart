@@ -1,3 +1,40 @@
+
+Map<String, dynamic> countries = {
+  'countries': [
+    {
+      'id': 1,
+      'name': 'Egypt',
+      'language': 'ar',
+      'cities': [
+        {
+          'id': 2,
+          'name': 'Cairo',
+          'area': 10000
+        },
+        {
+          'id': 4,
+          'name': 'Alexandria',
+          'area': 5000
+        }
+
+      ]
+    },
+    {
+      'id': 2,
+      'name': 'United-States',
+      'language': 'en',
+      'cities': [
+        {
+          'id': 10,
+          'name': 'London',
+          'area': 2000
+        }
+      ]
+    }
+  ]
+};
+
+
 void main() {
   List<int> numbers = [];
   numbers.forEach((l){});
